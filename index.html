@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player with Backward-Only Seeking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="custom-player">
+        <video id="video">
+            <source src="/Artyom/Untitled.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="controls">
+            <div id="left-controls">
+                <button id="play-pause"><i class="fas fa-play"></i></button>
+                <button id="backward-15"><i class="fas fa-undo"></i> 15s</button>
+            </div>
+            <div id="progress-bar">
+                <div id="progress"></div>
+                <div id="hover-progress"></div>
+            </div>
+            <div id="right-controls">
+                <span id="time-display">
+                    <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+                </span>
+                <div id="volume-container">
+                    <i class="fas fa-volume-up" id="volume-icon"></i>
+                    <input type="range" id="volume-control" min="0" max="1" step="0.1" value="1">
+                </div>
+                <button id="expand" class="control-btn"><i class="fas fa-expand"></i></button> <!-- Changed to icon -->
+            </div>
+        </div>
+        <button id="sign-up" style="display: none;">Sign Up Now</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
