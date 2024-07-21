@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player with Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-placeholder">
+                <img src="/Test G/банер сайта.png" alt="Logo Placeholder">
+            </div>
+        </header>
+
+        <main>
+            <section class="top-content">
+                <p>1.500.000&#8381 за 2 месяца без созвонов, бесплатных консультаций и недельных переговоров</p>
+            </section>
+
+            <hr class="separator">
+
+            <section class="middle-content">
+                <p>Детальный разбор новой модели продаж, про которую тебе не расскажут на курсах за 100тыщщ гуру продаж</p>
+            </section>
+    <div id="timer-container">
+        <div id="timer">24:00:00</div>
+        <div id="timer-info">*По истечению времени доступ к видео закроется*</div>
+    </div>
+    <div id="access-closed-message" style="display: none;">
+        ДОСТУП К ВИДЕО ЗАКРЫТ!
+    </div>
+    <div id="custom-player">
+        <video id="video">
+            <source src="/Test G/Untitled.mp4" type="video/mp4">
+            Ваш браузер не поддерживается
+        </video>
+        <div id="controls">
+            <div id="top-controls">
+                <div id="progress-bar">
+                    <div id="progress"></div>
+                    <div id="hover-progress"></div>
+                </div>
+            </div>
+            <div id="bottom-controls">
+                <div id="left-controls">
+                    <button id="play-pause"><i class="fas fa-play"></i></button>
+                    <button id="backward-15"><i class="fas fa-undo"></i> 15s</button>
+                    <span id="time-display">
+                        <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+                    </span>
+                </div>
+                <div id="right-controls">
+                    <div id="volume-container">
+                        <i class="fas fa-volume-up" id="volume-icon"></i>
+                        <input type="range" id="volume-control" min="0" max="1" step="0.1" value="1">
+                    </div>
+                    <button id="expand" class="control-btn"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+        </div>
+        <a  id="sign-up" style="display: none;" target="_blank" href="https://taplink.cc/workshop_fast">Получить готовый алгоритм и подобный разбор материалов</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
